@@ -1,0 +1,122 @@
+        header,
+        nav,
+        section,
+        .logo,
+        footer,
+        article,
+        aside {
+            font-family: 'Maven Pro', sans-serif;
+            line-height: 1.5em;
+
+        }
+header {
+            color: white;
+            background-image: url(background.jpg);
+            background-size: cover;
+            height: auto;
+            width: 100vw;
+            text-align: center;
+            font-size: 4em;
+            padding-top: 3em;
+            padding-bottom: 3em;
+}
+.contact {
+    width:50vw;
+}
+li a {
+    text-decoration: none;
+    color: black;
+    line-height: 3em;
+}
+h2 {
+    font-size: 2em;
+    text-align: right;
+    padding-right: 10%;
+}
+            .button1 {
+            box-shadow: 2px 2px 20px #d3d1d2;
+            border-radius: 1em;
+            background: #fd8c66;
+            font-size: 0.8em;
+            font-weight: 100;
+            border: none;
+
+            width: 30%;
+            height: 4em;
+            margin: 3em;
+            margin-left: 30%;
+
+        }
+button a {
+               color: #ffffff;
+                text-decoration: none;
+
+}
+nav a {
+    color: black;
+    font-weight: 800;
+    padding: 2em;
+    text-decoration: none;
+    line-height: 10em;
+}
+li {
+    list-style-type: none;
+}
+article {
+    box-shadow: 0px 1px 10px #eeeeee;
+  padding: 15%;
+
+}
+
+        @media (min-width: 600px) {
+            main {
+                display: grid;
+                grid-template-columns: 2fr 2fr 1fr;
+                grid-template-areas: 'lg nav nav'
+                                        'hd hd hd'
+                                        'art art as'
+                                        'ft ft ft';
+                grid-gap: 10px;
+
+            }
+            .logo {
+                grid-area: lg;
+                justify-content: center;
+            }
+            header {
+                grid-area: hd;
+                justify-content: center;
+            }
+            article {
+
+                align-items: flex-start;
+
+            }
+            nav {
+                grid-area: nav;
+                justify-content: center;
+                align-items: center;
+            }
+            footer {
+                display: grid;
+                grid-area: ft;
+                align-items: center;
+                justify-content: center;
+            }
+            section {
+
+                text-align: justify;
+                display: grid;
+                grid-area: art;
+                grid-template-columns: 1fr 1fr;
+
+                padding: 1em;
+                align-items: initial;
+                justify-content: center;
+            }
+            aside {
+                display: grid;
+                grid-area: as;
+                justify-content: center;
+            }
+        }
